@@ -4,7 +4,19 @@ vars:
   PROJECT: go-task-runner
 
 tasks:
+  hello-world:
+    desc: curlで"Hello World"を出力します
+    cmds:
+      - curl http://127.0.0.1:1323/ping
+
+tasks:
   docker-ps:
-    desc: 立ち上がっているプロセスを確認します
+    desc: 立ち上がっているプロセスを確認します。
     cmds:
       - docker ps -a
+
+tasks:
+  docker-rmi:
+    desc: コンテナイメージを全削除します。
+    cmds:
+      - docker rmi `docker images -aq`
