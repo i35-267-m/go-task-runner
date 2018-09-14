@@ -1,0 +1,10 @@
+version: '2'
+
+vars:
+  PROJECT: go-task-runner
+
+tasks:
+  docker-ps:
+    desc: 立ち上がっているプロセスを確認します
+    cmds:
+      - docker ps -a

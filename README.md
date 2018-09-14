@@ -1,7 +1,6 @@
 
 ## Overview
-- Golang in Docker(echo) for Mac
-GolangをDockerコンテナ内で起動して、port:1323で『Hello World!』を出力します。
+- Compare Golang task runner.
 
 ## Usage
 - [Golang in Docker(echo) for Mac](https://qiita.com/i35_267/items/b839d3e08619471b37b3)
@@ -9,12 +8,11 @@ GolangをDockerコンテナ内で起動して、port:1323で『Hello World!』�
 
 ## Install
 - [Golang in Docker(echo) for Mac](https://qiita.com/i35_267/items/b839d3e08619471b37b3)
-の事前準備(Goインスール)をご覧ください。
 
 
 ## Demo
 ```
-$ docker-compose up
+$ docker-compose up -d --build
 docker-go_api_1 is up-to-date
 Attaching to docker-go_api_1
 api_1  |
