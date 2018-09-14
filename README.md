@@ -6,13 +6,24 @@
 - [Golang in Docker(echo) for Mac](https://qiita.com/i35_267/items/b839d3e08619471b37b3)
 
 - go-task
+
 ```
-// taks list
 $ task
-// task run
-$ task {cmds}
+task: Available tasks for this project:
+* hello-world: 	curlで"Hello World"を出力します
+
+$ task hello-world
 ```
 
+- mage
+
+```
+$ mage
+Targets:
+  helloWorld     Hello Worldを出力します。
+
+$ mage helloWorld
+```
 
 
 ## Install
